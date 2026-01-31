@@ -93,3 +93,18 @@ dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 ```bash
 ls
 grep millionth data.txt
+
+## Bandit Level 8
+
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel identificando la única línea que aparece una sola vez dentro del archivo `data.txt`.
+
+## Explicación:
+Se ordenaron las líneas del archivo para agrupar las repetidas y luego se utilizó uniq -u para mostrar únicamente la línea que no se repite.
+
+## Contraseña obtenida: 
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+**Comandos utilizados:**
+```bash
+sort data.txt | uniq -u
