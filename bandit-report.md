@@ -48,3 +48,19 @@ contraseña: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 cd inhere
 file ./*
 cat ./-fileXX
+
+## Bandit Level 5
+
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel en un archivo dentro del directorio `inhere` que sea legible por humanos, tenga un tamaño de 1033 bytes y no sea ejecutable.
+
+**Explicacion:**  
+Se utilizó el comando find con filtros de tipo, tamaño y permisos para localizar el único archivo que cumple con todas las condiciones indicadas.
+Contraseña: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+**Comandos utilizados:**
+```bash
+cd inhere
+find . -type f -size 1033c ! -executable
+cat ./ruta/del/archivo
+
