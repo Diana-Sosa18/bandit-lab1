@@ -124,3 +124,22 @@ FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 **Comandos utilizados:**
 ```bash
 strings data.txt | grep "==="
+
+## Bandit Level 10
+
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel.
+
+## Explicación:
+En este nivel, la contraseña no se encuentra en un archivo visible de forma normal.
+Se utilizó el comando ls -la para listar todos los archivos, incluidos los ocultos..
+Al identificar el archivo oculto llamado .hidden, se usó el comando cat para mostrar su contenido y así obtener la contraseña del siguiente nivel.
+
+## Contraseña obtenida: 
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+**Comandos utilizados:**
+```bash
+ls -la
+cat .hidden
+
