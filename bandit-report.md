@@ -78,3 +78,18 @@ Contraseña: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null
 cat /ruta/del/archivo
 
+## Bandit Level 7
+
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en el archivo `data.txt` junto a la palabra `millionth`.
+
+## Explicación:
+Se utilizó el comando grep para buscar la línea que contiene la palabra clave millionth dentro del archivo, identificando así la contraseña correspondiente.
+
+## Contraseña obtenida: 
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+**Comandos utilizados:**
+```bash
+ls
+grep millionth data.txt
