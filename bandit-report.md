@@ -28,3 +28,13 @@ contraseña: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ls
 cat -- "--spaces in this filename--"
 
+## Bandit Level 3
+
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel en un archivo oculto dentro del directorio `inhere`.
+contraseña: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+**Comandos utilizados:**
+ls -la
+cat ...Hiding-From-You
+
