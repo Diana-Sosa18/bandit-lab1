@@ -64,3 +64,17 @@ cd inhere
 find . -type f -size 1033c ! -executable
 cat ./ruta/del/archivo
 
+## Bandit Level 6
+
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en un archivo del sistema que pertenezca al usuario bandit7, al grupo bandit6 y tenga un tamaño de 33 bytes.
+
+**Explicacion:**
+Se utilizó el comando find desde la raíz del sistema aplicando filtros por tamaño, propietario y grupo. Se redirigieron los errores para evitar mensajes de permisos denegados.
+Contraseña: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+**Comandos utilizados:**
+```bash
+find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null
+cat /ruta/del/archivo
+
