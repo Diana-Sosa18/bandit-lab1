@@ -38,3 +38,13 @@ contraseña: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 ls -la
 cat ...Hiding-From-You
 
+## Bandit Level 4
+
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en el único archivo legible por humanos dentro del directorio `inhere`.
+contraseña: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+**Comandos utilizados:**
+cd inhere
+file ./*
+cat ./-fileXX
